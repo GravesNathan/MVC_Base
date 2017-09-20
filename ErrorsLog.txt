@@ -1,0 +1,10 @@
+Sat Oct 29 15:05:33 CDT 2016 - view.StartupView - 
+
+E is an invalid input at this time 
+Please provide acceptable input from the menu below.
+
+Sat Oct 29 15:05:33 CDT 2016 - view.StartupView - 
+
+G is an invalid input at this time 
+Please provide acceptable input from the menu below.
+
