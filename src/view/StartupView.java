@@ -40,7 +40,7 @@ public class StartupView extends View{
             //return true exits the view and returns to the previous view
             //if there is no previous view to return to the program closes.
             case 'A':
-		this.console.println("Choice stub");
+		JCollectionView jCollectDemo = new JCollectionView();
 		return false;
             case 'B':
                 this.console.println("Choice stub");
