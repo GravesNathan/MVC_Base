@@ -17,11 +17,14 @@ public class JCollectionView {
     public JCollectionView(){
         this.demo();
     }
-    
+
+//demo source (slightly adjustged) from here
+//https://docs.oracle.com/javase/tutorial/collections/interfaces/QandE/answers.html    
     public void demo() {
         String args[]=new String[]{"one", "two", "three", "four", "five", "six"};
         // Get and shuffle the list of arguments
         List<String> argList = Arrays.asList(args);
+        //Made use of Collections.suffle
         Collections.shuffle(argList);
 
         // Print out the elements using JDK 8 Streams
