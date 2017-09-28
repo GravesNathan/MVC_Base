@@ -17,19 +17,19 @@ public class RunMyRunnable {
         
     public void runthis(){
         System.out.println("Starting Main Thread...");
-        MyRunnableThread mrt = new MyRunnableThread();
+        ImplementRunnable mrt = new ImplementRunnable();
         Thread t = new Thread(mrt);
         t.start();
-        while(MyRunnableThread.myCount <= 10){
+        while(ImplementRunnable.myCount <= 10){
             try{
-                System.out.println("Main Thread: "+(++MyRunnableThread.myCount));
+                System.out.println("Main Thread: "+(++ImplementRunnable.myCount));
                 Thread.sleep(100);
             } catch (InterruptedException iex){
                 System.out.println("Exception in main thread: "+iex.getMessage());
             }
         }
         System.out.println("End of Main Thread...");
-        MyRunnableThread.myCount = 0;
+        ImplementRunnable.myCount = 0;
     }
 }
 
