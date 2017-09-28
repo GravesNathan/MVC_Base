@@ -44,6 +44,7 @@ public class StartupView extends View{
 		return false;
             case 'B':
                 RunMyRunnable runRunnable = new RunMyRunnable();
+                RunThread runThread = new RunThread();
 		return false;
             case 'C':
 		this.console.println("Choice stub");
