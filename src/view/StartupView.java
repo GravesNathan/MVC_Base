@@ -43,7 +43,7 @@ public class StartupView extends View{
 		JCollectionView jCollectDemo = new JCollectionView();
 		return false;
             case 'B':
-                this.console.println("Choice stub");
+                RunMyRunnable runRunnable = new RunMyRunnable();
 		return false;
             case 'C':
 		this.console.println("Choice stub");
