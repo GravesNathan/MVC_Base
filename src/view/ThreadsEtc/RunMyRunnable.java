@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package view;
+package view.ThreadsEtc;
 
 /**
  *
@@ -16,7 +16,7 @@ public class RunMyRunnable {
     }
         
     public void runthis(){
-        System.out.println("Starting Main Thread...");
+        System.out.println("Starting Main Runnable STart...");
         ImplementRunnable mrt = new ImplementRunnable();
         Thread t = new Thread(mrt);
         t.start();

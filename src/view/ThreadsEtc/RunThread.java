@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package view;
+package view.ThreadsEtc;
 
 /**
  *
@@ -28,5 +28,6 @@ public class RunThread {
             }
         }
         System.out.println("End of Main Thread...");
+        MySmpThread.myCount = 0;
     }
 }

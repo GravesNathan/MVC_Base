@@ -3,22 +3,28 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package view;
+package view.ThreadsEtc;
 
 /**
  *
- * @author Support
+ * @author Nathan
  */
-public class MySmpThread extends Thread{
+public class ImplementRunnable implements Runnable{
+
+ 
     public static int myCount = 0;
-    public void run(){
-        while(MySmpThread.myCount <= 10){
+    public ImplementRunnable(){
+         
+    }
+    @Override
+    public void run() {
+        while(ImplementRunnable.myCount <= 10){
             try{
-                System.out.println("Expl Thread: "+(++MySmpThread.myCount));
+                System.out.println("Expl Runnable Thread: "+(++ImplementRunnable.myCount));
                 Thread.sleep(100);
             } catch (InterruptedException iex) {
                 System.out.println("Exception in thread: "+iex.getMessage());
             }
         }
-    }
+    } 
 }

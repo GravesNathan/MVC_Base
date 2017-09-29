@@ -5,6 +5,8 @@
  */
 package view;
 
+import view.ThreadsEtc.RunThread;
+import view.ThreadsEtc.RunMyRunnable;
 import Exceptions.CharInputException;
 
 /**
