@@ -90,3 +90,7 @@
  ****PLAYER STATUS REPORT**** 
  2017/09/28 18:49:24 is your game start time. 
 
+
+ ****PLAYER STATUS REPORT**** 
+ 2017/10/02 19:30:07 is your game start time. 
+
