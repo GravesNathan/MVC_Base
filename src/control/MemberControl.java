@@ -7,29 +7,55 @@ package control;
 
 import java.util.Random;
 import model.Members;
+import mvcproject.HibernateUtil;
+import org.hibernate.Session;
 
 /**
  *
  * @author NathanG
  */
+//@ManagedBEan
+//@SessionScoped
 public class MemberControl {
     
-    private Members dbMembers = new Members();
+//    static SessionFactory sessionFactory = null;
+//    static{
+//        Configuration config=new Configuration();
+//        config.configure();
+//        StandardServiceRegistryBuilder builder=new StandardServiceRegistryBuilder();
+//        builder.applySettings(config.getProperties());
+//        MetadataSources metadataSources=new MetadataSources();
+//        metadataSources.addAnnotatedClass(Members.class);
+//        Metadata metadata = metadataSources.buildMetadata(builder.build());
+//        sessionFactory=metadata.buildSessionFactory();
+//    }
+    
+    private Members member;
     private String tempName;
+    private HibernateUtil helper;
+    private Session session;
+    private String name;
 
     public MemberControl() {
         tempName = createName();
         addMember(tempName);
-        checkMembers();
     }
-    
     
     public void addMember(String name){
-        dbMembers.setName(name);
+        member = new Members(name);
+        session = helper.getSessionFactory().openSession();
+        session.beginTransaction();
+        session.save(member);
+        session.getTransaction().commit();
+        session.close();
     }
     
-    public String checkMembers(){
-        return(dbMembers.getName());
+    public String getName(){
+        session = helper.getSessionFactory().openSession();
+        session.beginTransaction();
+        member = (Members) session.get(Members.class, 1);
+        this.name = member.getName();
+        return name;
     }
     
     private String createName() {
@@ -46,23 +72,3 @@ public class MemberControl {
     }
     
 }
-//public class InsertEmployee {
-//
-//	public static void main(String[] args) {
-//		Configuration cfg = new configuration();
-//		cfg.getAppConfigurationEntry("Hibernate.cfg.xml");
-//		SessionFactory sf = cfg.buildSessionFactory();
-//		Session s = sf.openSession();
-//		Transaction tx = s.beginTransaction();
-//		Employee emp = new Employee();
-//		emp.setId(1);
-//		emp.setName("Eric");
-//		emp.setMobile(4220119);
-//		emp.setEmail("min15010@byui.edu");
-//		s.save(emp);
-//		s.flush();
-//		tx.commit();
-//		s.close();
-//	}
-//
-//}

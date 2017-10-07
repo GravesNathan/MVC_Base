@@ -17,7 +17,8 @@ import control.MemberControl;
 public class StartupView extends View{
 
     public StartupView(){
-        super("Please select the technology you want to see demonstraighted or explained next"
+        super(" "
+                + "\nPlease select the technology you want to see demonstraighted or explained next"
                 + "\n A - Java Collections"
                 + "\n B - Threads, Executors, and Runnables"
                 + "\n C - MVC"
@@ -55,11 +56,18 @@ public class StartupView extends View{
             case 'D':
                 this.console.println("Choice stub");
                 return false;
+            case 'E':
+                MemberControl membersControl = new MemberControl();
+                this.console.println("Member 1 has name " + membersControl.getName());
+		return false;
             case 'F':
                 this.console.println("Choice stub");
 		return false;
+            case 'G':
+                this.console.println("Choice stub");
+		return false;
             case 'H':
-                MemberControl membersControl = new MemberControl();
+                this.console.println("Choice stub");
 		return false;
             case 'I':
                 this.console.println("Choice stub");
@@ -75,10 +83,10 @@ public class StartupView extends View{
 		return false;
             case 'M':
                 this.console.println("Choice stub");
-		return false;
+            return false;
             case 'N':
                 this.console.println("Choice stub");
-		return false;
+            return false;
             case 'Q':
                 this.console.println("Quit App");
                 return true;

@@ -4,16 +4,19 @@
  * and open the template in the editor.
  */
 package model;
+//8:29
 
 /**
  *
  * @author Nathan
  */
 public class Members {
+
    private int id;
    private String name; 
 
-   public Members() {}
+   public Members(){}
+   
    public Members(String name) {
       this.name = name;
    }
