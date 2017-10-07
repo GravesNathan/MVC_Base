@@ -8,6 +8,7 @@ package view;
 import view.ThreadsEtc.RunThread;
 import view.ThreadsEtc.RunMyRunnable;
 import Exceptions.CharInputException;
+import control.MemberControl;
 
 /**
  *
@@ -58,7 +59,7 @@ public class StartupView extends View{
                 this.console.println("Choice stub");
 		return false;
             case 'H':
-                this.console.println("Choice stub");
+                MemberControl membersControl = new MemberControl();
 		return false;
             case 'I':
                 this.console.println("Choice stub");
