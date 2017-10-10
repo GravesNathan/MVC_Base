@@ -15,17 +15,17 @@ public class ExecutorServiceTest {
 		ExecutorService executor = Executors.newFixedThreadPool(2);
 	   
 		// execute the Runnable
-	    Runnable taskOne = new MyThread("TaskOne", 2, 100);
+	    Runnable taskOne = new ExecutorThread("TaskOne", 2, 100);
 	    executor.execute(taskOne);
 	    for(int i = 0; i < 2; i++) {
 	    	// if this task is not created or is canceled or is completed
 			if ((taskTwo == null) || (taskTwo.isDone()) || (taskTwo.isCancelled())) {
 				// submit a task and return a Future
-				taskTwo = executor.submit(new MyThread("TaskTwo", 4, 200));
+				taskTwo = executor.submit(new ExecutorThread("TaskTwo", 4, 200));
 			}
 	
 			if ((taskThree == null) || (taskThree.isDone()) || (taskThree.isCancelled())) {
-				taskThree = executor.submit(new MyThread("TaskThree", 5, 100));
+				taskThree = executor.submit(new ExecutorThread("TaskThree", 5, 100));
 			}
 			// if null the task has finished
 			if(taskTwo.get() == null) {
