@@ -58,6 +58,8 @@ public class StartupView extends View{
                 return false;
             case 'E':
                 MemberControl membersControl = new MemberControl();
+                this.console.println("\n");
+                this.console.println("A member has been added.");
                 this.console.println("Member 1 has name " + membersControl.getName());
 		return false;
             case 'F':
