@@ -24,4 +24,3 @@ public class JsonEncodeDemo {
       System.out.print(obj);
    }
 }
-}
