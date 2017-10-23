@@ -16,6 +16,10 @@ public class JCollectionView {
 //public class Ran {
     public JCollectionView(){
         this.demo();
+        this.setdemo();
+        //this.mapdemo();
+        //this.treedemo();
+        //this.queuedemo();
     }
 
 //demo source (slightly adjustged) from here
@@ -37,6 +41,34 @@ public class JCollectionView {
         }
 
         System.out.println();
+        
+        
+    }
+
+    private void setdemo() {
+        int numbers[] = {11, 11, 22, 22, 8, 5, 5};
+        Set<Integer> mySet = new HashSet<>();
+        try {
+            for (int i=0; i<6; i++){
+                mySet.add(numbers[i]);
+            }
+            System.out.println("In my demo I included 3 duplicate numbers, 11, 22, and 5."
+                    + "\nYou'll see below the set only contains each number once.");
+            System.out.println(mySet);
+        }
+        catch (Exception e) {}
+    }
+
+    private void mapdemo() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    private void treedemo() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    private void queuedemo() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
 
