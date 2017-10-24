@@ -17,7 +17,7 @@ public class JCollectionView {
     public JCollectionView(){
         this.demo();
         this.setdemo();
-        //this.mapdemo();
+        this.mapdemo();
         //this.treedemo();
         //this.queuedemo();
     }
@@ -60,7 +60,15 @@ public class JCollectionView {
     }
 
     private void mapdemo() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+      Map m1 = new HashMap(); 
+      m1.put("Zara", "8");
+      m1.put("Mahnaz", "31");
+      m1.put("Ayan", "12");
+      m1.put("Daisy", "14");
+
+      System.out.println();
+      System.out.println(" Map Elements");
+      System.out.print("\t" + m1);
     }
 
     private void treedemo() {

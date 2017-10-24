@@ -32,7 +32,8 @@ public class StartupView extends View{
                 + "\n K - Use Case Diagrams"
                 + "\n L - Use Case Documents"
                 + "\n M - State Diagrams"
-                + "\n N - Sequence Diagrams");
+                + "\n N - Sequence Diagrams"
+                + "\n Q - Quit");
     }
 
     @Override
