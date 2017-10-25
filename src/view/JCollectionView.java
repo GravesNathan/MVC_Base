@@ -69,7 +69,7 @@ public class JCollectionView {
       m1.put("Daisy", "14");
 
       System.out.println();
-      System.out.println("My Map has " + size(m1) +" Elements");
+      System.out.println("My Map has " + size(m1) +" Elements.");
       System.out.print("\t" + m1);
     }
 
