@@ -19,8 +19,8 @@ public class JCollectionView {
         this.demo();
         this.setdemo();
         this.mapdemo();
-        //this.treedemo();
-        //this.queuedemo();
+        this.treedemo();
+        this.queuedemo();
     }
 
 //demo source (slightly adjustged) from here
@@ -69,16 +69,52 @@ public class JCollectionView {
       m1.put("Daisy", "14");
 
       System.out.println();
-      System.out.println("My Map has " + size(m1) +" Elements.");
-      System.out.print("\t" + m1);
+      System.out.println("My Map has " + size(m1) +" Elements.  It contains the below elements.");
+      System.out.print("\t" + m1 + "\n");
     }
 
     private void treedemo() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+      // Create a tree set
+      TreeSet ts = new TreeSet();
+     
+      // Add elements to the tree set
+      ts.add("C");
+      ts.add("A");
+      ts.add("B");
+      ts.add("E");
+      ts.add("F");
+      ts.add("D");
+      System.out.println("\nBelow is a TreeSet");
+      System.out.println(ts);
+      ts.clear();
+      System.out.println("The tree will print here -> " + ts + "  As you can see it's empty"
+              + "due to the clear method.");
+}
 
     private void queuedemo() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        //Create a queue instance
+        Queue queueA = new LinkedList();
+        queueA.add("Bill");
+        queueA.add("Joe");
+        queueA.add("James");
+        //View first element without removing it from queue
+        Object firstElement = queueA.element();
+        System.out.println("The first element of the queue is " + firstElement);
+        
+        //access via Iterator
+        System.out.println("Iteration using iterator");
+        Iterator iterator = queueA.iterator();
+        while(iterator.hasNext()){
+          String element = (String) iterator.next();
+          System.out.println(element);
+        }
+
+        //access via new for-loop
+        System.out.println("Iteration using for-loop");
+        for(Object object : queueA) {
+            String element = (String) object;
+            System.out.println(element);
+        }
     }
 }
 
