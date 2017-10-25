@@ -9,6 +9,7 @@ package view;
  *
  * @author Nathan
  */
+import static com.mchange.v2.util.CollectionUtils.size;
 import java.util.*;
 
 public class JCollectionView {
@@ -61,13 +62,14 @@ public class JCollectionView {
 
     private void mapdemo() {
       Map m1 = new HashMap(); 
+      //object.put("Key", Value);
       m1.put("Zara", "8");
       m1.put("Mahnaz", "31");
       m1.put("Ayan", "12");
       m1.put("Daisy", "14");
 
       System.out.println();
-      System.out.println(" Map Elements");
+      System.out.println("My Map has " + size(m1) +" Elements");
       System.out.print("\t" + m1);
     }
 
