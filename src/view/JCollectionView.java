@@ -88,7 +88,7 @@ public class JCollectionView {
       System.out.println(ts);
       ts.clear();
       System.out.println("The tree will print here -> " + ts + "  As you can see it's empty"
-              + "due to the clear method.");
+              + "due to the clear method.\n");
 }
 
     private void queuedemo() {
@@ -102,7 +102,7 @@ public class JCollectionView {
         System.out.println("The first element of the queue is " + firstElement);
         
         //access via Iterator
-        System.out.println("Iteration using iterator");
+        System.out.println("\nIteration using iterator");
         Iterator iterator = queueA.iterator();
         while(iterator.hasNext()){
           String element = (String) iterator.next();
@@ -110,7 +110,7 @@ public class JCollectionView {
         }
 
         //access via new for-loop
-        System.out.println("Iteration using for-loop");
+        System.out.println("\nIteration using for-loop");
         for(Object object : queueA) {
             String element = (String) object;
             System.out.println(element);
