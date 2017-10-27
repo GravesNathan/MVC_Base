@@ -270,3 +270,35 @@
  ****PLAYER STATUS REPORT**** 
  2017/10/25 19:54:09 is your game start time. 
 
+
+ ****PLAYER STATUS REPORT**** 
+ 2017/10/26 20:29:32 is your game start time. 
+
+
+ ****PLAYER STATUS REPORT**** 
+ 2017/10/26 20:30:45 is your game start time. 
+
+
+ ****PLAYER STATUS REPORT**** 
+ 2017/10/26 20:30:56 is your game start time. 
+
+
+ ****PLAYER STATUS REPORT**** 
+ 2017/10/26 20:33:50 is your game start time. 
+
+
+ ****PLAYER STATUS REPORT**** 
+ 2017/10/26 20:37:45 is your game start time. 
+
+
+ ****PLAYER STATUS REPORT**** 
+ 2017/10/26 20:39:12 is your game start time. 
+
+
+ ****PLAYER STATUS REPORT**** 
+ 2017/10/26 20:39:33 is your game start time. 
+
+
+ ****PLAYER STATUS REPORT**** 
+ 2017/10/26 20:41:17 is your game start time. 
+

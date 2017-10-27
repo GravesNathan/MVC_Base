@@ -9,6 +9,10 @@ import view.ThreadsEtc.RunThread;
 import view.ThreadsEtc.RunMyRunnable;
 import Exceptions.CharInputException;
 import control.MemberControl;
+import static java.lang.Thread.sleep;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import view.ThreadsEtc.MyExecutorControl;
 
 /**
  *
@@ -50,6 +54,14 @@ public class StartupView extends View{
             case 'B':
                 RunMyRunnable runRunnable = new RunMyRunnable();
                 RunThread runThread = new RunThread();
+                MyExecutorControl mainExecutor = new MyExecutorControl();
+        {//Sleep for a bit while threads finish.
+            try {
+                sleep(100);
+            } catch (InterruptedException ex) {
+                Logger.getLogger(StartupView.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
 		return false;
             case 'C':
 		this.console.println("Choice stub");

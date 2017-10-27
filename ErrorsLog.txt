@@ -13,3 +13,8 @@ Fri Oct 06 23:18:02 CDT 2017 - view.StartupView -
 E is an invalid input at this time 
 Please provide acceptable input from the menu below.
 
+Thu Oct 26 20:39:55 CDT 2017 - view.StartupView - 
+
+  is an invalid input at this time 
+Please provide acceptable input from the menu below.
+
