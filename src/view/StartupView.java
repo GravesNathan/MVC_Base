@@ -28,7 +28,7 @@ public class StartupView extends View{
                 + "\n C - MVC"
                 + "\n D - JavaBeans"
                 + "\n E - Hibernate"
-                + "\n F - QCJSON and JSON"
+                + "\n F - JSON"
                 + "\n G - Android HttpUrlConnection"
                 + "\n H - Servlets"
                 + "\n I - JUnit Tests"
@@ -76,7 +76,7 @@ public class StartupView extends View{
                 this.console.println("Member 1 has name " + membersControl.getName());
 		return false;
             case 'F':
-                this.console.println("Choice stub");
+                JsonUsageExample testJson = new JsonUsageExample();
 		return false;
             case 'G':
                 this.console.println("Choice stub");

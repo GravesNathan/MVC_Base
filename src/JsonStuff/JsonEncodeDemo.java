@@ -10,7 +10,8 @@ package JsonStuff;
  * @author Nathan
  */
 import org.json.simple.JSONObject;
-
+//This example stores information in a JSONObject.
+//A JSON object is one that stores the data as it would appear in JSON text format.
 public class JsonEncodeDemo {
 
    public static void main(String[] args){
