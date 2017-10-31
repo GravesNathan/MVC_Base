@@ -378,3 +378,91 @@
  ****PLAYER STATUS REPORT**** 
  2017/10/28 22:46:19 is your game start time. 
 
+
+ ****PLAYER STATUS REPORT**** 
+ 2017/10/30 19:23:03 is your game start time. 
+
+
+ ****PLAYER STATUS REPORT**** 
+ 2017/10/30 19:23:59 is your game start time. 
+
+
+ ****PLAYER STATUS REPORT**** 
+ 2017/10/30 19:24:51 is your game start time. 
+
+
+ ****PLAYER STATUS REPORT**** 
+ 2017/10/30 19:25:25 is your game start time. 
+
+
+ ****PLAYER STATUS REPORT**** 
+ 2017/10/30 19:26:06 is your game start time. 
+
+
+ ****PLAYER STATUS REPORT**** 
+ 2017/10/30 19:28:13 is your game start time. 
+
+
+ ****PLAYER STATUS REPORT**** 
+ 2017/10/30 19:42:09 is your game start time. 
+
+
+ ****PLAYER STATUS REPORT**** 
+ 2017/10/30 19:45:38 is your game start time. 
+
+
+ ****PLAYER STATUS REPORT**** 
+ 2017/10/30 19:49:57 is your game start time. 
+
+
+ ****PLAYER STATUS REPORT**** 
+ 2017/10/30 19:50:09 is your game start time. 
+
+
+ ****PLAYER STATUS REPORT**** 
+ 2017/10/30 19:51:18 is your game start time. 
+
+
+ ****PLAYER STATUS REPORT**** 
+ 2017/10/30 19:54:49 is your game start time. 
+
+
+ ****PLAYER STATUS REPORT**** 
+ 2017/10/30 19:56:54 is your game start time. 
+
+
+ ****PLAYER STATUS REPORT**** 
+ 2017/10/30 19:59:11 is your game start time. 
+
+
+ ****PLAYER STATUS REPORT**** 
+ 2017/10/30 19:59:57 is your game start time. 
+
+
+ ****PLAYER STATUS REPORT**** 
+ 2017/10/30 20:02:56 is your game start time. 
+
+
+ ****PLAYER STATUS REPORT**** 
+ 2017/10/30 20:03:49 is your game start time. 
+
+
+ ****PLAYER STATUS REPORT**** 
+ 2017/10/30 20:09:07 is your game start time. 
+
+
+ ****PLAYER STATUS REPORT**** 
+ 2017/10/30 20:18:58 is your game start time. 
+
+
+ ****PLAYER STATUS REPORT**** 
+ 2017/10/30 20:22:09 is your game start time. 
+
+
+ ****PLAYER STATUS REPORT**** 
+ 2017/10/30 20:26:33 is your game start time. 
+
+
+ ****PLAYER STATUS REPORT**** 
+ 2017/10/30 20:28:29 is your game start time. 
+
