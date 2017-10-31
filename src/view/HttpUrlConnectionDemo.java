@@ -9,15 +9,11 @@ package view;
  *
  * @author Nathan
  */
-import Exceptions.UrlException;
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
 import java.io.InputStreamReader;
-import static java.lang.Thread.sleep;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.net.ssl.HttpsURLConnection;
 
 public final class HttpUrlConnectionDemo {
@@ -29,13 +25,6 @@ public final class HttpUrlConnectionDemo {
                 this.sendGet();
                 System.out.println("\nTesting 2 - Send Http POST request");
 		this.sendPost();
-//            } catch (UrlException urle) {
-//                //Logger.getLogger(HttpUrlConnectionDemo.class.getName()).log(Level.SEVERE, null, ex);
-////                System.out.println("Sorry, something went wrong with the request.");
-//            } catch (Exception ex) {
-//                //Logger.getLogger(HttpUrlConnectionDemo.class.getName()).log(Level.SEVERE, null, ex);
-//                System.out.println("There was an error retreiving the request.");
-//            }
         }
 	private final String USER_AGENT = "Mozilla/5.0";
 

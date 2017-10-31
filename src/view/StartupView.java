@@ -8,7 +8,6 @@ package view;
 import view.ThreadsEtc.RunThread;
 import view.ThreadsEtc.RunMyRunnable;
 import Exceptions.CharInputException;
-import Exceptions.UrlException;
 import control.MemberControl;
 import static java.lang.Thread.sleep;
 import java.util.logging.Level;
@@ -115,10 +114,6 @@ public class StartupView extends View{
         }catch (CharInputException cie){
                 ErrorView.display(this.getClass().getName(),cie.getMessage());
                 return false;
-//        } catch (UrlException urle) {
-//            ErrorView.display(this.getClass().getName(),urle.getMessage());
-//            //Logger.getLogger(StartupView.class.getName()).log(Level.SEVERE, null, urle);
-//            return false;
         } catch (Exception ex) {
             ErrorView.display(this.getClass().getName(),ex.getMessage());
             //Logger.getLogger(StartupView.class.getName()).log(Level.SEVERE, null, ex);
