@@ -41,6 +41,10 @@ public class MemberControl {
         addMember(tempName);
     }
     
+    public MemberControl(String username){
+        addMember(username);
+    }
+    
     public void addMember(String name){
         member = new Members(name);
         session = helper.getSessionFactory().openSession();
