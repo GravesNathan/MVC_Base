@@ -25,3 +25,4 @@ Mon Oct 30 19:59:22 CDT 2017 - view.StartupView -
   is an invalid input at this time 
 Please provide acceptable input from the menu below.
 
+Mon Oct 30 22:29:28 CDT 2017 - view.StartupView - https://selfsolve.apple.com/wcResults.do

@@ -466,3 +466,11 @@
  ****PLAYER STATUS REPORT**** 
  2017/10/30 20:28:29 is your game start time. 
 
+
+ ****PLAYER STATUS REPORT**** 
+ 2017/10/30 22:23:03 is your game start time. 
+
+
+ ****PLAYER STATUS REPORT**** 
+ 2017/11/02 20:36:20 is your game start time. 
+

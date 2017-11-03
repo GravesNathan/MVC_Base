@@ -44,6 +44,10 @@ public class JunitMain {
         return user1;
     }
     
+    public MemberControl getTempMember2(){
+        return user1;
+    }
+    
     public MemberControl getEmptyMember(){
         return blank;
     }
