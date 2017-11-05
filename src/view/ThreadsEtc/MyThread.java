@@ -25,10 +25,10 @@ public class MyThread extends Thread{
     @Override
     public void run() {
         try {
-            //for (int i=0; i<5; i++){
-                System.out.println("Current Thread Thread is " + Thread.currentThread().getId());
+            for (int i=0; i<5; i++){
+                System.out.println("Current Thread number is " + Thread.currentThread().getId());
                 sleep(100);
-            //}
+            }
         } catch (Exception e) {
         throw new UnsupportedOperationException("Something went wrong."); //To change body of generated methods, choose Tools | Templates.
         }
