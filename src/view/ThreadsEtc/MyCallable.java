@@ -23,7 +23,15 @@ public class MyCallable implements Callable{
         }
     }
     
-    
+    @Override
+    public Object call() throws Exception {
+        try {
+            System.out.println("\nCurrent Callable Thread number is " + Thread.currentThread().getId());
+            return 2+2+2*5;
+        } catch (Exception e) {
+            throw new UnsupportedOperationException("Something went wrong."); //To change body of generated methods, choose Tools | Templates.
+        }
+    }
     
 //  Lambda expression , same as below example.
 //    void doSomething() {
@@ -41,12 +49,5 @@ public class MyCallable implements Callable{
 //        };
 //    }
 
-    @Override
-    public Object call() throws Exception {
-        try {
-            return 2+2+2*5;
-        } catch (Exception e) {
-            throw new UnsupportedOperationException("Something went wrong."); //To change body of generated methods, choose Tools | Templates.
-        }
-    }
+
 }

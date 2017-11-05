@@ -52,8 +52,8 @@ public class StartupView extends View{
 		JCollectionView jCollectDemo = new JCollectionView();
 		return false;
             case 'B':
-                RunMyRunnable runRunnable = new RunMyRunnable();
-                RunThread runThread = new RunThread();
+                //RunMyRunnable runRunnable = new RunMyRunnable();
+                //RunThread runThread = new RunThread();
                 MyExecutorControl mainExecutor = new MyExecutorControl();
         {//Sleep for a bit while threads finish.
             try {

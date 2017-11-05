@@ -11,6 +11,7 @@ package view.ThreadsEtc;
  */
 public class MySmpThread extends Thread{
     public static int myCount = 0;
+    @Override
     public void run(){
         while(MySmpThread.myCount <= 10){
             try{

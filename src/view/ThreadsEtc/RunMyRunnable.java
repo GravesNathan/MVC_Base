@@ -16,7 +16,7 @@ public class RunMyRunnable {
     }
         
     public void runthis(){
-        System.out.println("Starting Main Runnable STart...");
+        System.out.println("Starting Main Runnable Start...");
         ImplementRunnable mrt = new ImplementRunnable();
         Thread t = new Thread(mrt);
         t.start();

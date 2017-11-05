@@ -6,10 +6,12 @@
 package view.ThreadsEtc;
 
 
+import static java.lang.Thread.sleep;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
+import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -28,17 +30,20 @@ public class MyExecutorControl {
     }
     
     void goToWork() throws InterruptedException, ExecutionException{
-        //Create local executor object of pool size 3
-        ExecutorService executor = Executors.newFixedThreadPool(3);
-        //Continue here, comparing to ExecutorServiceTest
-        //and using this http://tutorials.jenkov.com/java-util-concurrent/executorservice.html
-        //I want to make use of the submit(Callable) instead of runnable to get a returned value
-        //Of course this requires a callable implementation vs runnable (or so I think)
+        //Create local executor object of pool size 4
+        ExecutorService executor = Executors.newFixedThreadPool(4);
         Future<Integer> future;
         MyCallable callInstance;
+        MyRunnable runnableInstance;
+        MyThread threadInstance;
+        System.out.println("\n\n\nMy Stuff below.");
+        executor.execute(runnableInstance = new MyRunnable());
+        executor.execute(threadInstance = new MyThread());
         future = executor.submit(callInstance = new MyCallable());
-        System.out.print("My callable returned " + future.get());
-        //MyCallable callInstance = new MyCallable();
+        sleep (1000);
+        System.out.print("\nMy callable returned " + future.get() + "\n");
+        executor.shutdown();
+        sleep(200);
     }
     
 
